@@ -10,6 +10,7 @@ void Lagrange(Polynomial *p);
 void l(Polynomial *p, int j);
 void readInput(Polynomial *p);
 void evaluatePolynomial(Polynomial *p);
+void freeMemory(Polynomial *p);
 
 int main() {
   Polynomial p;
@@ -18,7 +19,15 @@ int main() {
   while (1) {
     evaluatePolynomial(&p);
   }
+  freeMemory(&p);
   return 0;
+}
+
+void freeMemory(Polynomial *p) {
+  free(p->x);
+  free(p->y);
+  free(p->param);
+  free(p->temp);
 }
 
 void readInput(Polynomial *p) {
