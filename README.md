@@ -6,6 +6,6 @@ Use C/C++/Rust to reproduce classic algorithms
 
 If you can provide me with any advice or support, I would be very grateful.
 
-Waiting for your contribution, communication, and start.
+Waiting for your contribution, communication, and star.
 
 email: charles-frazier@outlook.com
