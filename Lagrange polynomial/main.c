@@ -3,7 +3,7 @@
 
 // Lagrange polynomial
 int n;
-double *x, *y, *param, *temp;
+double *x, *y, *param, *temp, t1, t2;
 void Lagrange();
 void l(int j);
 int main() {
@@ -22,14 +22,26 @@ int main() {
     scanf("%lf", y + i);
   }
   Lagrange();
+  while (1) {
+    printf("CTRL+C to exit or Enter a point to evaluate:");
+    scanf("%lf", &t1);
+    for (int i = 0; i < n; i++) {
+      t2 = 0;
+      double t3 = 1;
+      for (int j = 0; j < i; j++) {
+        t3 *= t1;
+      }
+      t2 += param[i] * t3;
+    }
+    printf("The value of the polynomial at %lf is %lf\n", t1, t2);
+  }
   return 0;
 }
 void l(int j) {
-  double t1 = 1.0;
-  double t2;
-  for (int i = 0; i < n; i++)
+  for (int i = 0; i < n; i++) {
     temp[i] = 0;
-  temp[0] = 1;
+  }
+  t1 = temp[0] = 1.0;
   int count = 0;
   for (int i = 0; i < n; i++) {
     if (i == j)
@@ -44,7 +56,7 @@ void l(int j) {
     temp[0] = t2 * temp[0];
     count++;
   }
-  for (int i = 0; i < n - 1; i++) {
+  for (int i = 0; i < n; i++) {
     temp[i] *= t1;
   }
 }
@@ -52,10 +64,10 @@ void Lagrange() {
   for (int i = 0; i < n; i++) {
     l(i);
     for (int j = 0; j < n; j++) {
-      param[i] += y[j] * temp[j];
+      param[j] += y[i] * temp[j];
     }
   }
-  printf("The Lagrange polynomial is:\n");
+  printf("\nThe Lagrange polynomial is:\n");
   for (int i = 0; i < n; i++) {
     printf("%lf", param[i]);
     if (i != 0) {
@@ -65,4 +77,5 @@ void Lagrange() {
       printf("+");
     }
   }
+  printf("\n\n");
 }
