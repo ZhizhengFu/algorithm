@@ -19,8 +19,6 @@ int main() {
   while (1) {
     evaluatePolynomial(&p);
   }
-  freeMemory(&p);
-  return 0;
 }
 
 void freeMemory(Polynomial *p) {
