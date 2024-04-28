@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #define MAX 5000
 
 typedef struct {
@@ -12,6 +13,7 @@ double f(double x);
 int trans(int d, int u);
 int two(int k);
 double sum(Polynomial *r, int n);
+double absolute(double x);
 void readInput(Polynomial *r);
 void Romberg(Polynomial *r);
 int main() {
@@ -30,8 +32,12 @@ void Romberg(Polynomial *r){
             double tmp = (double)two(2*j);
             r->T[trans(j,r->k-j)] = tmp/(tmp-1) * r->T[trans(j-1,r->k-j+1)] - 1/(tmp-1)*r->T[trans(j-1,r->k-j)];
         }
-    }while(r->T[trans(r->k,0)]-r->T[trans(r->k-1,0)]<r->epsilon);
+    }while(absolute(r->T[trans(r->k,0)]-r->T[trans(r->k-1,0)])<r->epsilon);
     printf("The result is %lf\n", r->T[trans(r->k,0)]);
+}
+double absolute(double x){
+    if(x<0)return -x;
+    return x;
 }
 double sum(Polynomial *r, int n){
     double ans = 0;
@@ -48,7 +54,7 @@ int two(int k){
     return 2*two(k-1);
 }
 double f(double x) {
-    return x * x;
+    return x*x;
 }
 void readInput(Polynomial *r) {
     printf("Enter a:");
