@@ -10,4 +10,4 @@
 bash script.sh
 ```
 
-- github: <https://github.com/charlesfrazier/algorithm>
+- github: <https://github.com/charlesfrazier/algorithm/Romberg>
