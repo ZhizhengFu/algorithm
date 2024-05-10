@@ -1,6 +1,6 @@
 # 说明文档
 
-> 221900336 符支正 charles-frazier@outlook.com
+> 221900336 符支正 <charles-frazier@outlook.com>
 
 - 本项目使用C语言编写
 
