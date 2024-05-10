@@ -43,7 +43,6 @@ centroids, closest = k_means(x, k)
 
 # 计算总内聚度
 
-
 inertia = total_inertia(x, closest, centroids)
 print("Total Inertia:", inertia)
 
