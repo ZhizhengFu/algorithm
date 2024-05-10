@@ -17,16 +17,15 @@ long double composite_trapezoidal(long double a, long double b, int n, long doub
 }
 
 long double composite_simpson(long double a, long double b, int n, long double (*f)(long double)){
-    long double h = (b - a) / n, sum = f(a) + f(b);
-    for (int i = 0; i < n; i++) sum += 4 * f(a + (i + 0.5) * h);
-    for(int i = 1; i < n; i++) sum += 2 * f(a + i * h);
+    long double h = (b - a) / n, sum = f(a) + f(b) + 4 * f(a + 0.5 * h);
+    for(int i = 1; i < n; i++) sum += (2 * f(a + i * h) + 4 * f(a + (i + 0.5) * h));
     return h / 6 * sum;
 }
 
 void calculate_integral(long double a, long double b, long double (*f)(long double), long double (*method)(long double, long double, int, long double (*)(long double))){
     long double result = method(a, b, 1, f), new_result;
-    int i;
-    for (i = 1; fabsl(result - (new_result = method(a, b, 1 << i, f))) >= EPSILON; i++) result = new_result;
+    int i = 1;
+    for (; fabsl(result - (new_result = method(a, b, 1 << i, f))) >= EPSILON; i++) result = new_result;
     printf("积分结果: %.8Lf\n区间个数: %d\n基点个数: %d\n", result, 1 << i, (1 << i) + 1);
 }
 
