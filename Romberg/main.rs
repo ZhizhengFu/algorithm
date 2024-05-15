@@ -22,7 +22,6 @@ fn trapezoidal(a: f64, b: f64, n: i32, f: fn(f64) -> f64) -> f64 {
     }
     h * sum
 }
-
 fn simpson(a: f64, b: f64, n: i32, f: fn(f64) -> f64) -> f64 {
     let h = (b - a) / (n as f64);
     let mut sum = f(a) + f(b) + 4.0 * f(a + 0.5 * h);
@@ -31,7 +30,6 @@ fn simpson(a: f64, b: f64, n: i32, f: fn(f64) -> f64) -> f64 {
     }
     h / 6.0 * sum
 }
-
 fn integral(a: f64, b: f64, f: fn(f64) -> f64, method: fn(f64, f64, i32, fn(f64) -> f64) -> f64) {
     let mut result = method(a, b, 1, f);
     let mut i = 1;
