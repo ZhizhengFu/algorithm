@@ -22,20 +22,21 @@ long double composite_simpson(long double a, long double b, int n, long double (
     return h / 6 * sum;
 }
 
-void calculate_integral(long double a, long double b, long double (*f)(long double), long double (*method)(long double, long double, int, long double (*)(long double))){
+void calculate_integral(int jud, long double a, long double b, long double (*f)(long double), long double (*method)(long double, long double, int, long double (*)(long double))){
     long double result = method(a, b, 1, f), new_result;
     int i = 1;
     for (; fabsl(result - (new_result = method(a, b, 1 << i, f))) >= EPSILON; i++) result = new_result;
-    printf("积分结果: %.8Lf\n区间个数: %d\n基点个数: %d\n", result, 1 << i, (1 << i) + 1);
+    if (jud) printf("积分结果: %.8Lf\n区间个数: %d\n基点个数: %d\n", result, 1 << i, (1 << i) + 1);
+    else printf("积分结果: %.8Lf\n区间个数: %d\n基点个数: %d\n", result, 1 << i, (1 << (i+1)) + 1);
 }
 
 int main(){
     for(int i=0;i<3;i++){
         printf("----------------------------------------------------------------------\n|                         测试 %d 开始！                              ｜\n----------------------------------------------------------------------\n",i+1);
         printf("\n复合梯形公式：\n");
-        calculate_integral(range[i][0], range[i][1], funcPtr[i], composite_trapezoidal);
+        calculate_integral(1, range[i][0], range[i][1], funcPtr[i], composite_trapezoidal);
         printf("\n复合Simpson公式：\n");
-        calculate_integral(range[i][0], range[i][1], funcPtr[i], composite_simpson);
+        calculate_integral(0, range[i][0], range[i][1], funcPtr[i], composite_simpson);
         printf("\n龙贝格积分法：\n");
         long double T[2][MAX_ITERATIONS];
         T[0][0] = composite_trapezoidal(range[i][0], range[i][1], 1, funcPtr[i]);
