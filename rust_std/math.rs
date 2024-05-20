@@ -5,6 +5,6 @@ fn inv_sqrt(x: f32) -> f32 {
     let y = y * (1.5 - 0.5 * x * y * y);
     y * (1.5 - 0.5 * x * y * y)
 }
-fn main() {
-    println!("{}", 1.0 / inv_sqrt(3.0));
-}
+// fn main() {
+//     println!("{}", 1.0 / inv_sqrt(3.0));
+// }
