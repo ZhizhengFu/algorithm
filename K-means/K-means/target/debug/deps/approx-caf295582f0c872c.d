@@ -1,0 +1,11 @@
+/Users/frazier/Documents/code/algorithm/K-means/K-means/target/debug/deps/libapprox-caf295582f0c872c.rmeta: /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/lib.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/abs_diff_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/relative_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/ulps_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/macros.rs
+
+/Users/frazier/Documents/code/algorithm/K-means/K-means/target/debug/deps/libapprox-caf295582f0c872c.rlib: /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/lib.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/abs_diff_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/relative_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/ulps_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/macros.rs
+
+/Users/frazier/Documents/code/algorithm/K-means/K-means/target/debug/deps/approx-caf295582f0c872c.d: /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/lib.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/abs_diff_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/relative_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/ulps_eq.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/macros.rs
+
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/lib.rs:
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/abs_diff_eq.rs:
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/relative_eq.rs:
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/ulps_eq.rs:
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/approx-0.4.0/src/macros.rs:

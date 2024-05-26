@@ -1,0 +1,9 @@
+/Users/frazier/Documents/code/algorithm/K-means/K-means/target/debug/deps/libpathfinder_simd-3d18b30e24a57821.rmeta: /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/lib.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/extras.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/mod.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/swizzle_f32x4.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/swizzle_i32x4.rs
+
+/Users/frazier/Documents/code/algorithm/K-means/K-means/target/debug/deps/pathfinder_simd-3d18b30e24a57821.d: /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/lib.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/extras.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/mod.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/swizzle_f32x4.rs /Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/swizzle_i32x4.rs
+
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/lib.rs:
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/extras.rs:
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/mod.rs:
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/swizzle_f32x4.rs:
+/Users/frazier/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pathfinder_simd-0.5.3/src/scalar/swizzle_i32x4.rs:
