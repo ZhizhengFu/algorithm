@@ -48,8 +48,6 @@ def total_inertia(points, closest, centroids):
 # 运行K-Means算法并评估结果
 k = 3
 centroids, closest = k_means(x, k)
-inertia = total_inertia(x, closest, centroids)
-print("Total Inertia:", inertia)
 
 # 可视化聚类结果
 colors = ['r', 'g', 'b']
