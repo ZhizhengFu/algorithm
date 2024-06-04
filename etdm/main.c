@@ -1,3 +1,9 @@
+// input: n  : number of equations
+//       a1 a2 ... an : lower diagonal
+//      b1 b2 ... bn : main diagonal
+//     c1 c2 ... cn : upper diagonal
+//     d1 d2 ... dn : right side
+// output: x1 x2 ... xn : solution
 #include <stdio.h>
 #define F(a) double a[n];for(int i=0;i<n;i++)scanf("%lf", a+i);
 #define G(a) a[i] = (a[i] - c[i] * a[i+1]) / b[i];
