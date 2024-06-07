@@ -8,7 +8,7 @@
 #define F(a) double a[n];for(int i=0;i<n;i++)scanf("%lf", a+i);
 #define G(a) a[i] = (a[i] - c[i] * a[i+1]) / b[i];
 int n;
-int main(void){
+int main(){
     scanf("%d", &n);
     F(a) F(b) F(c) F(d)
     *a*=-1;
