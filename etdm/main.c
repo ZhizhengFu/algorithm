@@ -24,4 +24,4 @@ int main(void){
     a[n-1]=(d[n-1]-c[n-1]**d-a[n-1]*d[n-2])/(b[n-1]+a[n-1]*a[n-2]+c[n-1]**a);
     for(int i=0;i<n-1;i++) printf("x%d = %lf\n",i+1, d[i] + a[i] * a[n-1]);
     printf("x%d = %lf", n, a[n-1]);
-}
+} 
